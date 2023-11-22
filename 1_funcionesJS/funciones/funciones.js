@@ -3,5 +3,5 @@ function Encender() {
     alert();
 }
 function Inicio() {
-    alert("La hora de conexión es:"+ fecha.getHours());
+    alert("La hora de conexión es "+ fecha.getHours() + ":" + fecha.getMinutes());
 }
