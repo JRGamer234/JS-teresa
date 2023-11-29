@@ -1,20 +1,16 @@
-<!DOCTYPE html>
-<HTML>
-
-<HEAD>
-    <SCRIPT LANGUAGE="Javascript" SRC="/1_funcionesJS/funciones/funciones.js"></SCRIPT>
-</HEAD>
-
-<BODY>
-    <FORM>
-        <INPUT TYPE="button" NAME="Boton" VALUE="Hora" onClick="Inicio()">
-    </FORM>
-    <FORM>
-        <INPUT TYPE="number" id="edad" min="0" required>
-        <button onclick="miEdad()">Verificar</button>
-    </FORM>
-
-
-</BODY>
-
-</HTML>
+let fecha = new Date();
+var edad = Text();
+function Encender() {
+    alert();
+}
+function Inicio() {
+    alert("La hora de conexión es " + fecha.getHours() + ":" + fecha.getMinutes());
+}
+function miEdad() {
+    var edad = document.getElementById("edad").value;
+    if (edad > 17) {
+        alert('Apto');
+    } else {
+        alert('No Apto');
+    }
+}
