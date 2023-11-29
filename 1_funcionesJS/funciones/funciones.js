@@ -1,16 +1,23 @@
 let fecha = new Date();
-var edad = Text("¿Cuantos años tienes?");
+var edad = Text();
 function Encender() {
     alert();
 }
 function Inicio() {
     alert("La hora de conexión es " + fecha.getHours() + ":" + fecha.getMinutes());
+    if (fecha.getHours(8-14)) {
+        alert("Buenos días");
+    } else if (fecha.getHours(15-20)) {
+        alert("Buenas tardes");
+    } else{
+        alert("Buenas noches");
+    }
 }
 function miEdad() {
     var edad = document.getElementById("edad").value;
-    if (edad >= 18) {
-        alert('Apto');
+    if (edad > 17) {
+        alert("Apto");
     } else {
-        alert('No Apto');
+        alert("No Apto");
     }
 }
