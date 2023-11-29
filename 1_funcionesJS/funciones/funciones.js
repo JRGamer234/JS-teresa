@@ -1,5 +1,5 @@
 let fecha = new Date();
-let edad;
+var edad = Text("¿Cuantos años tienes?");
 function Encender() {
     alert();
 }
