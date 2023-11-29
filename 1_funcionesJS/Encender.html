@@ -1,23 +1,20 @@
-let fecha = new Date();
-var edad = Text();
-function Encender() {
-    alert();
-}
-function Inicio() {
-    alert("La hora de conexión es " + fecha.getHours() + ":" + fecha.getMinutes());
-    if (fecha.getHours(8-14)) {
-        alert("Buenos días");
-    } else if (fecha.getHours(15-20)) {
-        alert("Buenas tardes");
-    } else{
-        alert("Buenas noches");
-    }
-}
-function miEdad() {
-    var edad = document.getElementById("edad").value;
-    if (edad > 17) {
-        alert("Apto");
-    } else {
-        alert("No Apto");
-    }
-}
+<!DOCTYPE html>
+<HTML>
+
+<HEAD>
+    <SCRIPT LANGUAGE="Javascript" SRC="/1_funcionesJS/funciones/funciones.js"></SCRIPT>
+</HEAD>
+
+<BODY>
+    <FORM>
+        <INPUT TYPE="button" NAME="Boton" VALUE="Hora" onclick="Inicio()">
+    </FORM>
+    <FORM>
+        <INPUT TYPE="number" id="edad" placeholder="Inserte edad" min="0" required>
+        <button onclick="miEdad()">Verificar</button>
+    </FORM>
+
+
+</BODY>
+
+</HTML>
