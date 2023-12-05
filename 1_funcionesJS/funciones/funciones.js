@@ -1,13 +1,14 @@
 let fecha = new Date();
-var edad = Text();
+let edad = 18;
+let hora;
 function Encender() {
     alert();
 }
 function Inicio() {
     alert("La hora de conexión es " + fecha.getHours() + ":" + fecha.getMinutes());
-    if (fecha.getHours(8-14)) {
+    if (hora > 7 && hora < 14) {
         alert("Buenos días");
-    } else if (fecha.getHours(15-20)) {
+    } else if (hora > 14 && hora < 20) {
         alert("Buenas tardes");
     } else{
         alert("Buenas noches");
