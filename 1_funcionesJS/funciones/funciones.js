@@ -22,3 +22,5 @@ function miEdad() {
         alert("No Apto");
     }
 }
+
+// Prueba de que sincroniza
