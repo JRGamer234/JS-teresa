@@ -24,3 +24,4 @@ function miEdad() {
 }
 
 // Prueba de que sincroniza
+// prueba 2
