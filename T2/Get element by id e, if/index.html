@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>The Document Object</h1>
+    <h2>The getElementById() Method</h2>
+
+    <p id="demo"></p>
+    <p id="hora"></p>
+
+    <script>
+        var fecha = new Date();
+        document.getElementById("hora").innerHTML = fecha.getHours();
+        if (fecha.getHours() > 15)
+        //alert(fecha);
+        {
+            document.getElementById("demo").innerHTML = "buenas tardes";
+        }
+        else {
+            document.getElementById("demo").innerHTML = "buenos días";
+        }
+
+    </script>
+
+</body>
+
+</html>
