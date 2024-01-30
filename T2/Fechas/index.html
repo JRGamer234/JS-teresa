@@ -1,0 +1,43 @@
+<HTML>
+    <HEAD>
+      <SCRIPT LANGUAGE="JavaScript">
+      <!-- Los comentarios esconden el código a navegadores sin JavaScript
+        function Mostrar() 
+        {
+          vacaciones = ["Navidad", "Semana Santa", "Verano"];
+          fecha = new Date();
+          var mes = fecha.getMonth()+1;
+          //alert(fecha.getDate() + " / " + mes + " / "  + fecha.getFullYear());
+          if((mes == 11) && (dia >10))
+          {
+             alert("Noviembre");
+          }
+          else
+          {
+            alert("No es Noviembre");
+          }		
+          
+    
+         // alerta("No me pises, que llevo chanclas");
+          //return true;
+        }
+    
+      // -->
+      </SCRIPT>
+    </HEAD>
+    <BODY>
+      <A HREF="eventos.html"  >
+        Pasa por aquí encima
+      </A>
+      <BR>
+      <BR>
+      <HR>
+      <BR>
+      <FORM>
+        <INPUT TYPE="button" NAME="Boton" VALUE="Pulsame"
+             onClick="Mostrar();">
+      </FORM>
+    
+    
+    </BODY>
+    </HTML>
