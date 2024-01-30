@@ -15,7 +15,7 @@ function actualizarEstacion() {
 
     if ((mes === 3 && dia >= 20) || (mes == 6 && dia <=20)) {
         estacion = "Primavera";
-        fondo = "url('primavera.jpg')";
+        fondo = "url('')";
     } else if ((mes === 6 && dia >= 21) || (mes == 9 && dia <=21)) {
         estacion = "Verano";
         fondo = "url('verano.jpg')";
