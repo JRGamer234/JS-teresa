@@ -15,16 +15,16 @@ function actualizarEstacion() {
 
     if ((mes === 3 && dia >= 20) || (mes == 6 && dia <=20)) {
         estacion = "Primavera";
-        fondo = "url('')";
+        fondo = "url('/assets/img/primavera.png')";
     } else if ((mes === 6 && dia >= 21) || (mes == 9 && dia <=21)) {
         estacion = "Verano";
-        fondo = "url('verano.jpg')";
+        fondo = "url('/assets/img/verano.png')";
     } else if ((mes === 9 && dia >= 22) || (mes == 12 && dia <=20)) {
         estacion = "Otoño";
-        fondo = "url('otono.jpg')";
+        fondo = "url('/assets/img/otono.png')";
     } else {
         estacion = "Invierno";
-        fondo = "url('invierno.jpg')";
+        fondo = "url('/assets/img/invierno.png')";
     }
 
     document.body.style.backgroundImage = fondo;
