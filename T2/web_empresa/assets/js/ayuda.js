@@ -2,29 +2,14 @@ function CambioColor() {
     document.bgColor = "gray";
 };
 
-document.addEventListener("DOMContentLoaded", function () {
-    actualizarEstacion();
-});
-
-function actualizarEstacion() {
-
-    // Obtener la fecha actual
-    var fechaActual = new Date();
-
-    // Determinar la estación del año
-    var estacion;
-    var mes = fechaActual.getMonth() + 1; // Sumar 1 porque los meses comienzan desde 0
-    if ((mes === 3 && dia >= 20) || (mes == 6 && dia <= 20)) {
-        estacion = "primavera";
-    } else if ((mes === 6 && dia >= 21) || (mes == 9 && dia <= 21)) {
-        estacion = "verano";
-    } else if ((mes === 9 && dia >= 22) || (mes == 12 && dia <= 20)) {
-        estacion = "otoño";
-    } else {
-        estacion = "invierno";
+function Inicio() {
+    alert("La hora de conexión es " + fecha.getHours() + ":" + fecha.getMinutes());
+    if (hora > 7 && hora < 21) {
+        imagen.src = "/assets/img/dia.jfif";
+    } else{
+        imagen.src = "/assets/img/noche.jfif";
     }
-    var urlImagen = "assets/img/" + estacion + ".png";
-
+}
     // Poner la img
-    var imagen = document.getElementById("imagenRecuadro");
-    imagen.src = urlImagen}
+    var imagen = document.getElementById("imagen");
+    imagen.src = urlImagen
