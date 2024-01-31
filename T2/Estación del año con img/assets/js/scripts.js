@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-    actualizarEstacion();
+    saberestacion();
 });
 
-function actualizarEstacion() {
+function saberestacion() {
 
     // Obtener la fecha actual
     var fechaActual = new Date();
@@ -24,4 +24,5 @@ function actualizarEstacion() {
     // Poner la img
     var imagen = document.getElementById("imagenRecuadro");
     imagen.src = urlImagen
+    document.getElementById('estacion').textContent = `Estamos en ${estacion}.`;
 }
