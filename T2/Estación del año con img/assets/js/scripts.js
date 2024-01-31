@@ -1,7 +1,3 @@
-function CambioColor() {
-    document.bgColor = "gray";
-};
-
 document.addEventListener("DOMContentLoaded", function () {
     actualizarEstacion();
 });
@@ -27,4 +23,5 @@ function actualizarEstacion() {
 
     // Poner la img
     var imagen = document.getElementById("imagenRecuadro");
-    imagen.src = urlImagen}
+    imagen.src = urlImagen
+}

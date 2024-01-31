@@ -5,7 +5,6 @@ body {
 }
 
 header {
-    background-color: #ffffff;
     padding: 10px;
     text-align: center;
     color: rgb(0, 0, 0);
@@ -42,7 +41,7 @@ p {
 /* colores de texto */
 
 .txt-azul {
-    color: blue;
+    color: black;
 }
 
 .centroimg {
