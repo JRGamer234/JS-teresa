@@ -1,6 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-    saberestacion();
-});
 
 function saberestacion() {
 
@@ -9,7 +6,7 @@ function saberestacion() {
 
     // Determinar la estación del año
     var estacion;
-    var mes = fechaActual.getMonth() + 1; // Sumar 1 porque los meses comienzan desde 0
+    var mes = fechaActual.getMonth() + 1; // Sumar 1 para que sea del 1-12
     if ((mes === 3 && dia >= 20) || (mes == 6 && dia <= 20)) {
         estacion = "primavera";
     } else if ((mes === 6 && dia >= 21) || (mes == 9 && dia <= 21)) {
@@ -23,6 +20,6 @@ function saberestacion() {
 
     // Poner la img
     var imagen = document.getElementById("imagenRecuadro");
-    imagen.src = urlImagen
-    document.getElementById('estacion').textContent = `Estamos en ${estacion}.`;
+    imagen.src = urlImagen;
+    document.getElementById('estacion').textContent = `Estamos en ${estacion}`;
 }
