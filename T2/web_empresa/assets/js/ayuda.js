@@ -5,11 +5,8 @@ function CambioColor() {
 function Inicio() {
     alert("La hora de conexión es " + fecha.getHours() + ":" + fecha.getMinutes());
     if (hora > 7 && hora < 21) {
-        imagen.src = "/assets/img/dia.jfif";
+        document.body.style.backgroundImage="url('assets/img/dia.jpg')";
     } else{
-        imagen.src = "/assets/img/noche.jfif";
+        document.body.style.backgroundImage="url('assets/img/noche.jpg')";
     }
 }
-    // Poner la img
-    var imagen = document.getElementById("imagen");
-    imagen.src = urlImagen
