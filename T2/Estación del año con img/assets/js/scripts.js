@@ -1,4 +1,3 @@
-
 function saberestacion() {
 
     // Obtener la fecha actual
