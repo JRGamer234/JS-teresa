@@ -5,6 +5,7 @@ function saberestacion() {
 
     // Determinar la estación del año
     var estacion;
+    var dia = fechaActual.getDay();
     var mes = fechaActual.getMonth() + 1; // Sumar 1 para que sea del 1-12
     if ((mes === 3 && dia >= 20) || (mes == 6 && dia <= 20)) {
         estacion = "primavera";
