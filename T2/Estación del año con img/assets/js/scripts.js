@@ -28,19 +28,8 @@ function saberestacion() {
     var fechaActual = new Date();
     var dia = fechaActual.getDate() + 1;
     var mes = fechaActual.getMonth() + 1;
+    var dias = fechaActual.getDay() + 1;
     switch (mes) {
-        case 1:
-            {
-                alert("Invierno");
-
-                break;
-            }
-        case 2:
-            {
-                alert("Invierno");
-
-                break;
-            }
         case 3:
             {
                 if (dia < 20) {
@@ -51,38 +40,14 @@ function saberestacion() {
 
                 break;
             }
-        case 4:
-            {
-                alert("Primavera");
-
-                break;
-            }
-        case 5:
-            {
-                alert("Primavera");
-
-                break;
-            }
         case 6:
             {
-                if (dia < 21 ) {
+                if (dia < 21) {
                     alert("Primavera");
                 }
-                else{
+                else {
                     alert("Verano");
                 };
-                break;
-            }
-        case 7:
-            {
-                alert("Verano");
-
-                break;
-            }
-        case 8:
-            {
-                alert("Verano");
-
                 break;
             }
         case 9:
@@ -90,32 +55,57 @@ function saberestacion() {
                 if (dia < 22) {
                     alert("Verano");
                 }
-                else{
+                else {
                     alert("Otoño");
                 };
-                break;
-            }
-        case 10:
-            {
-                alert("Otoño");
-
-                break;
-            }
-        case 11:
-            {
-                alert("Otoño");
-
                 break;
             }
         case 12:
             {
                 if (dia < 21) {
                     alert("Otoño");
-                } else{
+                } else {
                     alert("Invierno");
                 };
 
                 break;
             }
+        default: {
+            if(mes == 1 || mes == 2){
+                alert("Invierno");
+            }else if(mes == 4 || mes == 5){
+                alert("Primavera");
+            }else if(mes == 10 || mes == 11){
+                alert("Otoño");
+            }
+            break;
+
+        }
     }
+    switch(dias){
+        case 1:{
+            alert("Lunes");
+        }
+        case 2:{
+            alert("Martes");
+        }
+        case 3:{
+            alert("Miércoles");
+        }
+        case 4:{
+            alert("Jueves");
+        }
+        case 5:{
+            alert("Viernes");
+        }
+        case 6:{
+            alert("Sábado");
+        }
+        case 7:{
+            alert("Domingo");
+        }
+    }
+
+    alert("Día: " + dias + " Dia: " + dia + " Mes: " + mes);
 }
+
