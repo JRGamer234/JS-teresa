@@ -26,7 +26,7 @@
 
 function saberestacion() {
     var fechaActual = new Date();
-    var dia = fechaActual.getDay();
+    var dia = fechaActual.getDate() + 1;
     var mes = fechaActual.getMonth() + 1;
     switch (mes) {
         case 1:
