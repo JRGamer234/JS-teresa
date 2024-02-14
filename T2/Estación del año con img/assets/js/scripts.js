@@ -31,22 +31,22 @@ function saberestacion() {
     switch (mes) {
         case 1:
             {
-                alert("Invierno")
+                alert("Invierno");
 
                 break;
             }
         case 2:
             {
-                alert("Invierno")
+                alert("Invierno");
 
                 break;
             }
         case 3:
             {
-                if (dia <= 19) {
-                    alert("Invierno")
-                } else if (dia >= 20) {
-                    alert("Primavera")
+                if (dia < 20) {
+                    alert("Invierno");
+                } else {
+                    alert("Primavera");
                 };
 
                 break;
@@ -65,11 +65,11 @@ function saberestacion() {
             }
         case 6:
             {
-                if (dia <= 20) {
-                    alert("Primavera")
+                if (dia < 21 ) {
+                    alert("Primavera");
                 }
-                else if (dia >= 21) {
-                    alert("Verano")
+                else{
+                    alert("Verano");
                 };
                 break;
             }
@@ -87,11 +87,11 @@ function saberestacion() {
             }
         case 9:
             {
-                if (dia <= 21) {
-                    alert("Verano")
+                if (dia < 22) {
+                    alert("Verano");
                 }
-                else if (dia >= 22) {
-                    alert("Otoño")
+                else{
+                    alert("Otoño");
                 };
                 break;
             }
@@ -109,10 +109,10 @@ function saberestacion() {
             }
         case 12:
             {
-                if (dia <= 20) {
-                    alert("Otoño")
-                } else if (dia >= 21) {
-                    alert("Invierno")
+                if (dia < 21) {
+                    alert("Otoño");
+                } else{
+                    alert("Invierno");
                 };
 
                 break;
