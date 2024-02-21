@@ -37,6 +37,9 @@ var nombreDia = DiasSemana[dia];
 meses = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
 var nombreMes = meses[mes];
 
+document.getElementById('imprimir').innerHTML =  "Hoy es " + nombreDia + " " + dia + " de " + nombreMes + " de " + alos;
+
+
 function saberestacion() {
     switch (mes) {
         case 3:
@@ -93,4 +96,4 @@ function saberestacion() {
     }
 }
 
-document.getElementById('imprimir').innerHTML =  "Hoy es " + nombreDia + " " + dia + " de " + nombreMes + " de " + alos;
+
