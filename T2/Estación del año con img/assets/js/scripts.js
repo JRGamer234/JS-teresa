@@ -34,6 +34,23 @@ DiasSemana = Array["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Vierne
 var meses = new Array[12];
 meses = Array["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
 
+
+// Crear un array con los nombres de los días de la semana
+var diasSemana = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+
+// Obtener la fecha actual
+var fecha = new Date();
+
+// Obtener el número del día de la semana (0 para Domingo, 1 para Lunes, etc.)
+var dia = fecha.getDay();
+
+// Obtener el nombre del día de la semana utilizando el array
+var nombreDia = diasSemana[dia];
+
+// Mostrar el nombre del día de la semana en un alert
+alert("Hoy es " + nombreDia);
+
+
 // function saberestacion() {
 //     switch (mes) {
 //         case 3:
