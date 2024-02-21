@@ -30,6 +30,35 @@ let dia = fechaActual.getDay();
 let alos = fechaActual.getFullYear();
 
 
+<<<<<<< HEAD
+=======
+
+// Crear un array con los nombres de los días de la semana
+var diasSemana = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+
+// Obtener la fecha actual
+var fecha = new Date();
+
+// Obtener el número del día de la semana (0 para Domingo, 1 para Lunes, etc.)
+var dia = fecha.getDay();
+
+// Obtener el nombre del día de la semana utilizando el array
+var nombreDia = diasSemana[dia];
+
+// Mostrar el nombre del día de la semana en un alert
+alert("Hoy es " + nombreDia);
+
+
+// function saberestacion() {
+//     switch (mes) {
+//         case 3:
+//             {
+//                 if (dia < 20) {
+//                     alert("Invierno");
+//                 } else {
+//                     alert("Primavera");
+//                 };
+>>>>>>> cbd7be63f58ab325b3ed1b5f4ab519d66858abe2
 
 
 var DiasSemana = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
@@ -96,3 +125,8 @@ function saberestacion() {
 
 document.getElementById('imprimir').innerHTML =  "Hoy es " + nombreDia + " " + dia + " de " + nombreMes + " de " + alos;
 
+<<<<<<< HEAD
+=======
+    alert("Hoy es " + DiasSemana + dia + " de " + meses + " de " + año);
+};
+>>>>>>> cbd7be63f58ab325b3ed1b5f4ab519d66858abe2
