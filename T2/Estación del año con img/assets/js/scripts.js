@@ -23,90 +23,73 @@
 //     imagen.src = urlImagen;
 //     document.getElementById('estacion').textContent = `Estamos en ${estacion}`;
 // }
+let fechaActual = new Date();
+let dia = fechaActual.getDate() + 1;
+let mes = fechaActual.getMonth() + 1;
+let dias = fechaActual.getDay();
+let año = fechaActual.getFullYear();
 
-function saberestacion() {
-    var fechaActual = new Date();
-    var dia = fechaActual.getDate() + 1;
-    var mes = fechaActual.getMonth() + 1;
-    var dias = fechaActual.getDay() + 1;
-    alert("Día: " + dias + " , " + dia + " Mes: " + mes);
-    switch (mes) {
-        case 3:
-            {
-                if (dia < 20) {
-                    alert("Invierno");
-                } else {
-                    alert("Primavera");
-                };
+var DiasSemana = new Array[7];
+DiasSemana = Array["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"]
+var meses = new Array[12];
+meses = Array["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
 
-                break;
-            }
-        case 6:
-            {
-                if (dia < 21) {
-                    alert("Primavera");
-                }
-                else {
-                    alert("Verano");
-                };
-                break;
-            }
-        case 9:
-            {
-                if (dia < 22) {
-                    alert("Verano");
-                }
-                else {
-                    alert("Otoño");
-                };
-                break;
-            }
-        case 12:
-            {
-                if (dia < 21) {
-                    alert("Otoño");
-                } else {
-                    alert("Invierno");
-                };
+// function saberestacion() {
+//     switch (mes) {
+//         case 3:
+//             {
+//                 if (dia < 20) {
+//                     alert("Invierno");
+//                 } else {
+//                     alert("Primavera");
+//                 };
 
-                break;
-            }
-        default: {
-            if(mes == 1 || mes == 2){
-                alert("Invierno");
-            }else if(mes == 4 || mes == 5){
-                alert("Primavera");
-            }else if(mes == 10 || mes == 11){
-                alert("Otoño");
-            }
-            break;
+//                 break;
+//             }
+//         case 6:
+//             {
+//                 if (dia < 21) {
+//                     alert("Primavera");
+//                 }
+//                 else {
+//                     alert("Verano");
+//                 };
+//                 break;
+//             }
+//         case 9:
+//             {
+//                 if (dia < 22) {
+//                     alert("Verano");
+//                 }
+//                 else {
+//                     alert("Otoño");
+//                 };
+//                 break;
+//             }
+//         case 12:
+//             {
+//                 if (dia < 21) {
+//                     alert("Otoño");
+//                 } else {
+//                     alert("Invierno");
+//                 };
 
-        }
-    }
-    switch(dias){
-        case 1:{
-            alert("Lunes");
-        }
-        case 2:{
-            alert("Martes");
-        }
-        case 3:{
-            alert("Miércoles");
-        }
-        case 4:{
-            alert("Jueves");
-        }
-        case 5:{
-            alert("Viernes");
-        }
-        case 6:{
-            alert("Sábado");
-        }
-        case 7:{
-            alert("Domingo");
-        }
-    }
+//                 break;
+//             }
+//         default: {
+//             if (mes == 1 || mes == 2) {
+//                 alert("Invierno");
+//             } else if (mes == 4 || mes == 5) {
+//                 alert("Primavera");
+//             } else if (mes == 10 || mes == 11) {
+//                 alert("Otoño");
+//             }
+//             break;
 
-    alert("Día: " + dias + " Dia: " + dia + " Mes: " + mes);
-}
+//         }
+//     }
+// }
+function imprime() {
 
+    alert("Hoy es " + DiasSemana + dia + " de " + meses + " de " + año);
+};
