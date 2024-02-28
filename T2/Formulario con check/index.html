@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <form>
+    <form name="Formulario">
     <br><p>¿Cuanto es x en la siguiente ecuacion?: 5x + 2 = 7</p>
         <BR><INPUT TYPE="radio" NAME="Respuesta1" VALUE="mal"> 3
         <BR><INPUT TYPE="radio" NAME="Respuesta1" VALUE="bien"> 1
@@ -35,7 +35,7 @@
         <BR><INPUT TYPE="radio" NAME="Respuesta5" VALUE="mal"> No
         <BR><INPUT TYPE="radio" NAME="Respuesta5" VALUE="bien"> No lo sé, tengo un BMW
     
-    <br><br><button onclick="nota()">Corregir</button>
+    <br><br><button onclick="nota(Formulario)">Corregir</button>
     </form>
     <script LANGUAGE="Javascript" src="assets/js/scripts.js"></script>
 
